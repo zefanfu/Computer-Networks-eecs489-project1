@@ -1,0 +1,58 @@
+2)    Predicted throughput: 
+	the minimum of throughput in L1 L2 L4 and L5=2.34 Mbps
+      Predicted latency: 
+	the sum of latency in L1 L2 L4 and L5=80+20+11+10=121 ms
+      Actual throughput: 
+	2.32 Mbps
+      Actual latency: 
+	121.676 ms
+      Explanation of results: 
+	same as prediction
+
+3.1)  Predicted throughput: 
+	half of Q2: 1.16Mbps
+      Predicted latency: 
+	same as Q2: 121 ms
+      Actual throughput: 
+	h1 to h10 is 0.446945 Mbps and h2 to h9 is 1.913530 Mbps
+      Actual latency: 
+	122.236 ms
+      Explanation of results: 
+	same as prediction for latency
+	throughput are not same as prediciton. 
+	h2 and h9 connection gets more throughput since I started it a little bit earlier than h1, h10 connection.
+
+3.2)  Predicted throughput:
+	one third of Q2: 0.77 Mbps
+      Predicted latency:
+	same as Q2 and Q3.1: 121 ms
+      Actual throughput:
+	h1 to h10 is 2.137230 Mbps, h5 to h6 is 1.713678 Mbps and h2 to h9 is 0.444820 Mbps
+      Actual latency:
+	122.302 ms
+      Explanation of results:
+	same as prediction for latency
+	throughput are not same as prediciton. 
+	h1 and h10 connection gets the biggest throughput and it close to 2.32 Mbps in Q2. 
+	I started h1, h10 first, then h5, h6 and h2, h9 in the last.	
+
+4)    Predicted throughput:
+	for h1, h10: 2.96/2=1.48 Mbps
+	for h3, h8: 2.96/2=1.48 Mbps
+      Predicted latency:
+	for h1, h10: 121 ms
+	for h3, h8: 31 ms
+      Actual throughput:2.062886
+	for h1, h10: 2.062886 Mbps
+	for h3, h8: 0.966928 Mbps
+      Actual latency:
+	for h1, h10: 125.816 ms
+	for h3, h8: 33.478 ms
+      Explanation of results:
+	same as prediction for latency
+	throughput are not same as prediciton. 
+	h1 and h10 connection gets the bigger throughput. 
+	I started h1, h10 first, then h3, h8.
+	I also tried for strating h3, h8 first and then h1, h10.
+	In the second time, H3,h8 gets more throughput.
+	If I could start the two connection simultaneously, they will be close to prediction
