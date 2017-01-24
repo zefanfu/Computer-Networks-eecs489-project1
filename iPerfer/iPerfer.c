@@ -107,7 +107,7 @@ int main(int argc, char *argv[])
    	 		time += (st2.tv_usec - st1.tv_usec) / 1000000.0;
    	 		int sizeKB=bytes/1000;			
 			double rate;			
-			rate=sizeKB/(time*1000);
+			rate=8*sizeKB/(time*1000);
 			printf("received=%d KB rate=%f Mbps\n",sizeKB,rate);
 
 			return 0;
@@ -190,7 +190,7 @@ int main(int argc, char *argv[])
 				realTime = (t3.tv_sec - t1.tv_sec);
    	 			realTime += (t3.tv_usec - t1.tv_usec) / 1000000.0;			
 				double rate;				
-				rate=sizeKB/(realTime*1000);
+				rate=8*sizeKB/(realTime*1000);
 				printf("sent=%d KB rate=%f Mbps\n",sizeKB,rate);
 				close(sd);
 			}
